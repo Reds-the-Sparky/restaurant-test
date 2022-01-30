@@ -41,9 +41,10 @@ a {
     position: fixed;
     top: 0;
     left: 0;
-    height: 9rem;
+    height: 8rem;
     z-index: 1;
-    background-color: rgba(117, 155, 41, 0.8);
+    background-color: #F6D464
+;
 }
 
 .logo {
