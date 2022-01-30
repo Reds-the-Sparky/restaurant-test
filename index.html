@@ -27,8 +27,10 @@
       crossorigin="anonymous"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="style.css" />
-    <title>Jevelin Theme</title>
+    <title>Arazzi</title>
   </head>
   <body>
     <header class="header">
@@ -62,7 +64,7 @@
 
           <ul class="icons">
             <li class="icon"><i class="fas fa-search"></i></li>
-           
+
             <li class="icon"><i class="fab fa-facebook-f"></i></li>
             <li class="icon"><i class="fab fa-instagram"></i></li>
           </ul>
@@ -94,45 +96,45 @@
           <h2 class="section-title">What We Can Offer</h2>
           <h3 class="section-subtitle">from our hearts</h3>
           <div class="three-columns-grid">
-            <div
-              class="grid-item"
-              data-aos="fade-right"
-              data-aos-offset="400"
-              data-aos-duration="1000"
-            >
-              <img src="img/pic1.png" alt="" width="200" />
-              <h3 class="subtitle"><strong>Always</strong> Fresh</h3>
-              <p class="paragraph">
-                Nulla dapibus tempus malesuada. Duis ultrices lacinia eleifend.
-                Etiam vel luctus nibh. Donec eu volutpat.
-              </p>
-            </div>
-            <div
-              class="grid-item"
-              data-aos="fade-up"
-              data-aos-offset="400"
-              data-aos-duration="1000"
-            >
-              <img src="img/pic2.png" alt="" width="200" />
-              <h3 class="subtitle"><strong>Eco</strong> Products</h3>
-              <p class="paragraph">
-                Nulla dapibus tempus malesuada. Duis ultrices lacinia eleifend.
-                Etiam vel luctus nibh. Donec eu volutpat.
-              </p>
-            </div>
-            <div
-              class="grid-item"
-              data-aos="fade-left"
-              data-aos-offset="400"
-              data-aos-duration="1000"
-            >
-              <img src="img/pic3.png" alt="" width="200" />
-              <h3 class="subtitle"><strong>Healthy</strong> Deserts</h3>
-              <p class="paragraph">
-                Nulla dapibus tempus malesuada. Duis ultrices lacinia eleifend.
-                Etiam vel luctus nibh. Donec eu volutpat.
-              </p>
-            </div>
+            <a href="/bakery_menu.html" class="menu-link">
+              <div
+                class="grid-item clickable menu"
+                data-aos="fade-right"
+                data-aos-offset="100"
+                data-aos-duration="500"
+                menu="bakery"
+              >
+                <img src="img/pic1.png" alt="" width="200" />
+                <h3 class="subtitle"><strong>Bakery</strong></h3>
+                <p class="paragraph">Click here for menu</p>
+              </div>
+            </a>
+            <a href="/restaurant_menu.html" class="menu-link">
+              <div
+                class="grid-item clickable menu"
+                data-aos="fade-up"
+                data-aos-offset="100"
+                data-aos-duration="500"
+                menu="restaurant"
+              >
+                <img src="img/pic2.png" alt="" width="200" />
+                <h3 class="subtitle"><strong>Restaurant</strong></h3>
+                <p class="paragraph">Click here for menu</p>
+              </div>
+            </a>
+            <a href="/lounge_menu.html" class="menu-link">
+              <div
+                class="grid-item clickable menu"
+                data-aos="fade-left"
+                data-aos-offset="100"
+                data-aos-duration="500"
+                menu="lounge"
+              >
+                <img src="img/pic3.png" alt="" width="200" />
+                <h3 class="subtitle"><strong>Lounge</strong></h3>
+                <p class="paragraph">Click here for drinks menu</p>
+              </div>
+            </a>
           </div>
         </div>
       </section>
@@ -143,7 +145,7 @@
             <div
               class="top-tart"
               data-aos="fade-right"
-              data-aos-offset="400"
+              data-aos-offset="100"
               data-aos-duration="1000"
             >
               <img src="img/tart.jpg" alt="Tart" class="tart" />
@@ -151,7 +153,7 @@
             <div
               class="about-us"
               data-aos="fade-left"
-              data-aos-offset="400"
+              data-aos-offset="100"
               data-aos-duration="1000"
             >
               <h2 class="section-title welcome">
@@ -171,7 +173,7 @@
             <div
               class="read-more"
               data-aos="fade-right"
-              data-aos-offset="400"
+              data-aos-offset="100"
               data-aos-duration="1000"
             >
               <h2 class="section-title welcome">
@@ -187,7 +189,7 @@
             <div
               class="top-fruits"
               data-aos="fade-left"
-              data-aos-offset="400"
+              data-aos-offset="100"
               data-aos-duration="1000"
             >
               <img
@@ -200,72 +202,7 @@
         </div>
       </section>
 
-      <section class="team" id="team">
-        <div class="container">
-          <h2 class="section-title">Our Team</h2>
-          <h3 class="section-subtitle">is the best</h3>
-          <div class="four-columns-grid">
-            <div
-              class="team-member"
-              data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-duration="1000"
-            >
-              <img src="img/team1.png" alt="Team Member 1" />
-              <h2 class="name">Carol William</h2>
-              <h3 class="position">Manager</h3>
-              <p class="description-paragraph">
-                Lorem ipsum dolor sit amet, consectetur a random vene adipiscing elit.
-                Suspendisse sagittis tortor eget sodales ultrices.
-              </p>
-            </div>
-            <div
-              class="team-member"
-              data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-duration="1000"
-            >
-              <img src="img/team2.png" alt="Team Member 2" />
-              <h2 class="name">Peter Lauren</h2>
-              <h3 class="position">Bar Director</h3>
-              <p class="description-paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse sagittis tortor eget sodales ultrices.
-              </p>
-            </div>
-            <div
-              class="team-member"
-              data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-duration="1000"
-            >
-              <img src="img/team3.png" alt="Team Member 3" />
-              <h2 class="name">Kate Fuson</h2>
-              <h3 class="position">Head Chef</h3>
-              <p class="description-paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse sagittis tortor eget sodales ultrices.
-              </p>
-            </div>
-            <div
-              class="team-member"
-              data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-duration="1000"
-            >
-              <img src="img/team4.png" alt="Team Member 4" />
-              <h2 class="name">Jack Fuson</h2>
-              <h3 class="position">Wine Director</h3>
-              <p class="description-paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse sagittis tortor eget sodales ultrices.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="menu" id="menu">
+      <!-- <section class="menu" id="menu">
         <div class="menu-header"></div>
         <div
           class="menu-card"
@@ -352,36 +289,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="customers">
-        <div class="container">
-          <h2 class="section-title">Customer</h2>
-          <h3 class="section-subtitle">stories about us</h3>
-          <div class="carousel">
-            <div>
-              <img src="img/carousel1.png" alt="" />
-              <p class="testimonial-paragraph">
-                Aenean consectetur lacinia diam a tincidunt. Vivamus facilisis
-                lacus non velit suscipit pellentesque. Nam ac mauris nec mi
-                lobortis sollicitudin sed at lacus. Fusce volutpat, dolor in
-                suscipit pharetra, lacus sapien sollicitudin quam, non aliquam
-                ex neque eu lectus.
-              </p>
-              <h2 class="name">Katey Gallardo</h2>
-            </div>
-            <div>
-              <img src="img/carousel2.png" alt="" />
-              <p class="testimonial-paragraph">
-                I'm baby vice lo-fi drinking vinegar,Everyday carry iPhone retro vape viral twee. Raw denim vexillologist cronut heirloom 3 wolf moon. Green juice portland la croix, sriracha vegan edison bulb cloud bread marfa yuccie 
-              </p>
-              <h2 class="name">Rajpatalharrylalsingh</h2>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="book" id="reservation">
+      <!-- <section class="book" id="reservation">
         <div class="container-fluid">
           <div class="book-card">
             <h2 class="section-title book-title">Select a Date & Book Now</h2>
@@ -477,7 +387,7 @@
             <a href="#" class="btn btn-book">Book Now</a>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <footer class="footer">
@@ -501,5 +411,12 @@
     <script>
       AOS.init();
     </script>
+    <!-- <script>
+      $(".menu").click(function () {
+        // console.log(this);
+        let menu_type = $(this).attr("menu");
+        console.log(menu_type);
+      });
+    </script> -->
   </body>
 </html>
