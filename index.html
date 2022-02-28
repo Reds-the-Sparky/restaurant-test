@@ -14,20 +14,24 @@
       src="https://kit.fontawesome.com/b699c21610.js"
       crossorigin="anonymous"
     ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-      integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI="
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
-      integrity="sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY="
-      crossorigin="anonymous"
-    />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha512-k78e1fbYs09TQTqG79SpJdV4yXq8dX6ocfP0bzQHReQSbEghnS6AQHE2BbZKns962YaqgQL16l7PkiiAHZYvXQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha512-ANkGm5vSmtDaoFA/NB1nVJzOKOiI4a/9GipFtkpMG8Rg2Bz8R1GFf5kfL0+z0lcv2X/KZRugwrAlVTAgmxgvIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <link rel="stylesheet" href="style.css" />
     <title>Arazzi</title>
@@ -46,19 +50,22 @@
 
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="#home" class="nav-link">Home</a>
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="restaurant_menu.html" class="nav-link">Restaurant </a>
+            </li>
+            <li class="nav-item">
+              <a href="bakery_menu.html" class="nav-link">Bakery</a>
+            </li>
+            <li class="nav-item">
+              <a href="lounge_menu.html" class="nav-link">Lounge</a>
+            </li>
+            <li class="nav-item">
+              <a href="Gallery.html" class="nav-link">Gallery</a>
             </li>
             <li class="nav-item">
               <a href="#about" class="nav-link">About us</a>
-            </li>
-            <li class="nav-item">
-              <a href="#team" class="nav-link">Team</a>
-            </li>
-            <li class="nav-item">
-              <a href="#menu" class="nav-link">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a href="#reservation" class="nav-link">Reservation</a>
             </li>
           </ul>
 
@@ -66,7 +73,11 @@
             <li class="icon"><i class="fas fa-search"></i></li>
 
             <li class="icon"><i class="fab fa-facebook-f"></i></li>
-            <li class="icon"><i class="fab fa-instagram"></i></li>
+            <li class="icon">
+              <a href="https://www.instagram.com/arazzitt" target="_blank"
+                ><i class="fab fa-instagram"></i>
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -98,9 +109,9 @@
           <div class="three-columns-grid">
             <a href="/bakery_menu.html" class="menu-link">
               <div
-                class="grid-item clickable menu"
+                class="grid-item clickable"
                 data-aos="fade-right"
-                data-aos-offset="100"
+                data-aos-offset="45"
                 data-aos-duration="500"
                 menu="bakery"
               >
@@ -111,7 +122,7 @@
             </a>
             <a href="/restaurant_menu.html" class="menu-link">
               <div
-                class="grid-item clickable menu"
+                class="grid-item clickable"
                 data-aos="fade-up"
                 data-aos-offset="100"
                 data-aos-duration="500"
@@ -124,7 +135,7 @@
             </a>
             <a href="/lounge_menu.html" class="menu-link">
               <div
-                class="grid-item clickable menu"
+                class="grid-item clickable"
                 data-aos="fade-left"
                 data-aos-offset="100"
                 data-aos-duration="500"
@@ -136,6 +147,93 @@
               </div>
             </a>
           </div>
+        </div>
+      </section>
+
+      <section class="about-carousel">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+          data-interval="false"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="welcome-carousel-section">
+                <img src="img/tart.jpg" alt="Tart" class="tart" />
+                <div>
+                  <h2 class="section-title welcome">
+                    Welcome to Arazzi Resturant & Bakery
+                  </h2>
+                  <p class="about-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse sagittis tortor eget sodales ultrices.
+                    Pellentesque bibendum condimentum neque, nec iaculis augue
+                    ultrices ac. Fusce interdum viverra aliquet.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="welcome-carousel-section">
+                <img src="img/tart.jpg" alt="Tart" class="tart" />
+                <div>
+                  <h2 class="section-title welcome">
+                    Welcome to Arazzi Resturant & Bakery
+                  </h2>
+                  <p class="about-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse sagittis tortor eget sodales ultrices.
+                    Pellentesque bibendum condimentum neque, nec iaculis augue
+                    ultrices ac. Fusce interdum viverra aliquet.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="welcome-carousel-section">
+                <img src="img/hero.jpg" alt="Tart" class="tart" />
+                <div>
+                  <h2 class="section-title welcome">
+                    Welcome to Arazzi Resturant & Bakery
+                  </h2>
+                  <p class="about-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse sagittis tortor eget sodales ultrices.
+                    Pellentesque bibendum condimentum neque, nec iaculis augue
+                    ultrices ac. Fusce interdum viverra aliquet.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </section>
 
@@ -176,9 +274,7 @@
               data-aos-offset="100"
               data-aos-duration="1000"
             >
-              <h2 class="section-title welcome">
-                Chef & Owner Riaz Bhagaloo and Colin
-              </h2>
+              <h2 class="section-title welcome">Chef & Owner R. Bhagaloo</h2>
               <p class="about-paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse sagittis tortor eget sodales ultrices. Pellentesque
