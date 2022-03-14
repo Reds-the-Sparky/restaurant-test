@@ -1,225 +1,1004 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat&family=Sacramento&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/b699c21610.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-      integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI="
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
-      integrity="sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY="
-      crossorigin="anonymous"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Arazzi</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container-fluid">
-        <nav class="nav">
-          <a href="index.html" class="logo">
-            <img src="img/logo.png" alt="logo" />
-          </a>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, minimum-scale=1"
+			/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat&family=Sacramento&display=swap"
+			rel="stylesheet"
+			/>
+		<script
+			src="https://kit.fontawesome.com/b699c21610.js"
+			crossorigin="anonymous"
+			></script>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha512-k78e1fbYs09TQTqG79SpJdV4yXq8dX6ocfP0bzQHReQSbEghnS6AQHE2BbZKns962YaqgQL16l7PkiiAHZYvXQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+			/>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha512-ANkGm5vSmtDaoFA/NB1nVJzOKOiI4a/9GipFtkpMG8Rg2Bz8R1GFf5kfL0+z0lcv2X/KZRugwrAlVTAgmxgvIg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+			></script>
+		<link rel="stylesheet" href="restaurant_menu.css" />
+		<title>Arazzi</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container-fluid">
+				<nav class="nav">
+					<a href="index.html" class="logo">
+					<img src="img/logo.png" alt="logo" />
+					</a>
+					<div class="nav__button">
+						<span class="nav__icon"></span>
+					</div>
+					<ul class="nav-list">
+						<li class="nav-item">
+							<a href="/" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="restaurant_menu.html" class="nav-link">Restaurant </a>
+						</li>
+						<li class="nav-item">
+							<a href="bakery_menu.html" class="nav-link">Bakery</a>
+						</li>
+						<li class="nav-item">
+							<a href="lounge_menu.html" class="nav-link">Lounge</a>
+						</li>
+						<li class="nav-item">
+							<a href="Gallery.html" class="nav-link">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a href="#about" class="nav-link">About us</a>
+						</li>
+					</ul>
+					<ul class="icons">
+						<li class="icon"><i class="fas fa-search"></i></li>
+						<li class="icon"><i class="fab fa-facebook-f"></i></li>
+						<li class="icon">
+							<a href="https://www.instagram.com/arazzitt" target="_blank"
+								><i class="fab fa-instagram"></i>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!--   Carousel beggiing  -->
+		<main>
+			<section class="about-carousel">
+				<div
+					id="carouselExampleIndicators"
+					class="carousel slide"
+					data-ride="carousel"
+					data-interval="false"
+					>
+					<ol class="carousel-indicators">
+						<li
+							data-target="#carouselExampleIndicators"
+							data-slide-to="0"
+							class="active"
+							></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="resturant-carousel-section">
+								<img class="d-block w-100" img src="./img/wine-food.jpg" alt="wine-food" class="resturant-carousel-pictures" />
+								<div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="resturant-carousel-section">
+								<img class="d-block w-100" img src="./img/wine-food.jpg" alt="panackes" class="resturant-carousel-pictures" />
+								<div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="resturant-carousel-section">
+								<img class="d-block w-100" img src="./img/wine-food.jpg" alt="bread" class="resturant-carousel-pictures" />
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="resturant-carousel-section">
+								<img class="d-block w-100" img src="./img/burger.jpg" alt="burger" class="resturant-carousel-pictures" />
+								<div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="resturant-carousel-section">
+								<img class="d-block w-100" img src="./img/group-of-people-making-toast.jpg" alt="cheers" class="resturant-carousel-pictures" />
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="resturant-carousel-section">
+								<img class="d-block w-100" img src="./img/pasta.jpg" alt="Pasta" class="resturant-carousel-pictures" />
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="resturant-carousel-section">
+								<img class="d-block w-100"img src="./img/pizza.jpg" alt="Pizza" class="resturant-carousel-pictures" />
+								<div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a
+						class="carousel-control-prev"
+						href="#carouselExampleIndicators"
+						role="button"
+						data-slide="prev"
+						>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+					</a>
+					<a
+						class="carousel-control-next"
+						href="#carouselExampleIndicators"
+						role="button"
+						data-slide="next"
+						>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</section>
 
-          <div class="nav__button">
-            <span class="nav__icon"></span>
-          </div>
+			<div class="btn-container">
+				<button id="breakfastBtn" class="btn" onclick="showMenu('breakfast')">Breakfast</button>
+				<button id="lunchBtn" class="btn" onclick="showMenu('lunch')">Lunch</button>
+				<button id="lunchBtn" class="btn" onclick="showMenu('dinner')">Dinner</button>
 
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="/" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="restaurant_menu.html" class="nav-link">Restaurant </a>
-            </li>
-            <li class="nav-item">
-              <a href="bakery_menu.html" class="nav-link">Bakery</a>
-            </li>
-            <li class="nav-item">
-              <a href="lounge_menu.html" class="nav-link">Lounge</a>
-            </li>
-            <li class="nav-item">
-              <a href="Gallery.html" class="nav-link">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">About us</a>
-            </li>
-          </ul>
+			</div>
+			<!-- end of carousel -->
+			<!-- ########## BEGINNING OF BREAKFAST MENU #############-->
+			<section class="menu" id="menu">
+				<div>
+				<div
+					class="menu-card"
+					data-aos="fade-up"
+					data-aos-offset="100"
+					data-aos-duration="1000"
+					>
+						<div class="submenu" id="breakfast">
+							<!-- ########## BEGINNING OF BREAKFAST MENU #############-->
+							<div class="menu-card-header">
+								<img class="fish" src="img/fish&steak.png" alt="Fish & Steak" />
+								<h2 class="section-title menu-title">Breakfast</h2>
+								<h3 class="section-subtitle">From our hearts</h3>
+							</div>
+							<div class="starters">
+								<h2>BREAKFAST CLASSIC</h2>
+								<h3 class="section-subtitle">Served with toast / croissant / pancakes and fresh fruit</h3>
+								<div class="menu-container">
+									<div class="menu-item-container">
+										<h3>BUTTERMILK PANCAKES</h3>
+										<div class="menu-description-area">
+											<p3 class="menu-description-text"
+												>Three large fluffy pancakes, served with two strips of
+												bacon or sausage and house-made syrup
+											</p3>
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>FRENCH TOAST</h3>
+										<div class="menu-description-area">
+											<p3 class="menu-description-text">
+												Rich and spicy sourdough French toast, served with bacon or
+												sausage and maple syrup
+											</p3
+												>
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>BELGIAN WAFFLE</h3>
+										<div class="menu-description-area">
+											<p3 class="menu-description-text"
+												>A large sweet buttery waffle served with fresh fruit, cream
+												and drizzled with syrup
+											</p3
+												>
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>JUNIOR</h3>
+										<div class="menu-description-area">
+											<p3 class="menu-description-text"
+												>Two eggs any way, two strips of bacon or sausage and home
+												fried potatoes
+											</p3
+												>
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>CLASSIC</h3>
+										<div class="menu-description-area">
+											<p3 class="menu-description-text"
+												>Three eggs any way, 4 strips of bacon or sausage and home style potatoes</p3
+												>
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+								</div>
+							</div>
+							<!-- ############ EGG DISHES ############# -->
+							<!-- EGG DISHES HEADER  -->
+							<div class="mains">
+								<h2>EGG DISHES</h2>
+								<h3 class="section-subtitle">Served with toast / croissant / pancakes and fresh fruit</h3>
+								<!--  END OF EGG DISHES HEADER -->
+								<div class="menu-item-container">
+									<h3>THE NORTHERNER</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Hash browns base topped with smoked salmon, caramelized onions, and bacon, finished off with poached eggs topped with sour cream and chives.</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>EGGS BENEDICT</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Poached eggs, hollandaise, English muffin, prosciutto, and fresh cream</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<!-- end of EGG    DISHES HEADER   -->
+							</div>
+							<!-- ############ THE GOURMET LOVERS ############# -->
+							<!-- GORMET LOVERS  HEADER  -->
+							<div class="mains">
+								<h2>THE GOURMET LOVERS</h2>
+								<h3 class="section-subtitle">Served with toast / croissant / pancakes and fresh fruit</h3>
+								<!--  END OF EGG DISHES HEADER -->
+								<div class="menu-item-container">
+									<h3>THE SOUFFLÉ</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Three-cheese soufflé with ricotta, Monterey jack and parmesan, served with house-made porcini caviar</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>MANOUCHE ZA’ATAR</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Middle eastern pancake, with fresh greens, tomato, Parma ham, goat cheese and tahini</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>SEAFOOD LOVER</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Shrimp frittata with tomatoes, chive, chilies, and oregano topped with feta cheese</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>FRITTATA DE CAVIAR</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Spicy potato and onion pancake, served with garlic and ginger sour cream accompanied with decadent salmon caviar</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>TART ARUGULA</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>An arugula salad with bacon, eggs, tomatoes, and mushrooms served with an English mustard vinaigrett</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>THE PROSCIUTTO</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>A mushroom and spinach salad topped with our signature house caramelized onion, thinly sliced prosciutto, and boiled eggs, drizzled with our house dressing</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>BERRY CUCUMBER SALAD</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>A combination of arugula, strawberries, and cucumber with an onion mint dressing, topped with grapes and toasted almonds</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>WATERMELON AND PINE NUT</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Arugula, watermelon, and pine nuts with a sweet balsamic glaze and crumbled blue cheese</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>MANOUCHE ZA’ATAR</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Middle eastern pancake, with fresh greens, tomato, Parma ham, goat cheese and tahini</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>TRUFFLE AND GRAVLAX EGGS BENEDICT</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Our take on traditional eggs benedict served on English muffins</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+							</div>
+							<!-- END OF THE GORMET LOVERS  -->
+							<div class="starters">
+								<h2>ON THE GO SANDWICHES</h2>
+								<div class="menu-container">
+									<!-- ON THE GO SANDWICHES -->
+									<div class="menu-item-container">
+										<h3>Crêpe with eggs</h3>
+										<div class="menu-description-area">
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>Applewood bacon, smoked gouda, and eggs</h3>
+										<div class="menu-description-area">
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>Sausage and egg on an English muffin</h3>
+										<div class="menu-description-area">
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>Roasted vegetable and goat cheese wrap</h3>
+										<div class="menu-description-area">
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>Crêpe with smoked salmon and dill cream</h3>
+										<div class="menu-description-area">
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>Bagels- smoke salmon, dill cream cheese, egg and bacon, plain cream cheese, double</h3>
+										<div class="menu-description-area">
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>smoke bacon in a bun shape</h3>
+										<div class="menu-description-area">
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+								</div>
+							</div>
+							<!-- END OF ON THE GO SANDWICHES  -->
+							<!-- BEGINING OF INTERNATIONAL SELECTIONS HEADER -->
+							<div class="mains">
+								<h2>INTERNATIONAL SELECTIONS/ CONTINENTALS</h2>
+								<!-- END OF INTERNATIONAL SELECTIONS HEADER -->
+								<!-- MENU FOR INTERNATIONAL SELECTIONS  -->
+								<div class="menu-item-container">
+									<h3>PASTRY CART SELECTIONS</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Choose any five items from cart. Accompanied with a juice/tea/ coffee</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>AÇAI BOWL</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Try our delicious açai bowl with a berry trio frozen puree served with fresh granola, nuts, and honey</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+							</div>
+						</div>
 
-          <ul class="icons">
-            <li class="icon"><i class="fas fa-search"></i></li>
+						<div class="submenu" id="lunch">
+							<!-- ########## BEGINNING OF LUNCH MENU #############-->
+							<div class="menu-card-header">
+								<img class="fish" src="img/fish&steak.png" alt="Fish & Steak" />
+								<h2 class="section-title menu-title">Lunch</h2>
+								<h3 class="section-subtitle">From our hearts</h3>
+							</div>
+							<div class="starters">
+								<h2>Lunch CLASSIC</h2>
+								<h3 class="section-subtitle">Served with toast / croissant / pancakes and fresh fruit</h3>
+								<div class="menu-container">
+									<div class="menu-item-container">
+										<h3>BUTTERMILK PANCAKES</h3>
+										<div class="menu-description-area">
+											<p3 class="menu-description-text"
+												>Three large fluffy pancakes, served with two strips of
+												bacon or sausage and house-made syrup
+											</p3>
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>FRENCH TOAST</h3>
+										<div class="menu-description-area">
+											<p3 class="menu-description-text">
+												Rich and spicy sourdough French toast, served with bacon or
+												sausage and maple syrup
+											</p3
+												>
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>BELGIAN WAFFLE</h3>
+										<div class="menu-description-area">
+											<p3 class="menu-description-text"
+												>A large sweet buttery waffle served with fresh fruit, cream
+												and drizzled with syrup
+											</p3
+												>
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>JUNIOR</h3>
+										<div class="menu-description-area">
+											<p3 class="menu-description-text"
+												>Two eggs any way, two strips of bacon or sausage and home
+												fried potatoes
+											</p3
+												>
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>CLASSIC</h3>
+										<div class="menu-description-area">
+											<p3 class="menu-description-text"
+												>Three eggs any way, 4 strips of bacon or sausage and home style potatoes</p3
+												>
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+								</div>
+							</div>
+							<!-- ############ EGG DISHES ############# -->
+							<!-- EGG DISHES HEADER  -->
+							<div class="mains">
+								<h2>EGG DISHES</h2>
+								<h3 class="section-subtitle">Served with toast / croissant / pancakes and fresh fruit</h3>
+								<!--  END OF EGG DISHES HEADER -->
+								<div class="menu-item-container">
+									<h3>THE NORTHERNER</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Hash browns base topped with smoked salmon, caramelized onions, and bacon, finished off with poached eggs topped with sour cream and chives.</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>EGGS BENEDICT</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Poached eggs, hollandaise, English muffin, prosciutto, and fresh cream</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<!-- end of EGG    DISHES HEADER   -->
+							</div>
+							<!-- ############ THE GOURMET LOVERS ############# -->
+							<!-- GORMET LOVERS  HEADER  -->
+							<div class="mains">
+								<h2>THE GOURMET LOVERS</h2>
+								<h3 class="section-subtitle">Served with toast / croissant / pancakes and fresh fruit</h3>
+								<!--  END OF EGG DISHES HEADER -->
+								<div class="menu-item-container">
+									<h3>THE SOUFFLÉ</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Three-cheese soufflé with ricotta, Monterey jack and parmesan, served with house-made porcini caviar</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>MANOUCHE ZA’ATAR</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Middle eastern pancake, with fresh greens, tomato, Parma ham, goat cheese and tahini</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>SEAFOOD LOVER</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Shrimp frittata with tomatoes, chive, chilies, and oregano topped with feta cheese</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>FRITTATA DE CAVIAR</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Spicy potato and onion pancake, served with garlic and ginger sour cream accompanied with decadent salmon caviar</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>TART ARUGULA</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>An arugula salad with bacon, eggs, tomatoes, and mushrooms served with an English mustard vinaigrett</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>THE PROSCIUTTO</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>A mushroom and spinach salad topped with our signature house caramelized onion, thinly sliced prosciutto, and boiled eggs, drizzled with our house dressing</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>BERRY CUCUMBER SALAD</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>A combination of arugula, strawberries, and cucumber with an onion mint dressing, topped with grapes and toasted almonds</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>WATERMELON AND PINE NUT</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Arugula, watermelon, and pine nuts with a sweet balsamic glaze and crumbled blue cheese</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>MANOUCHE ZA’ATAR</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Middle eastern pancake, with fresh greens, tomato, Parma ham, goat cheese and tahini</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>TRUFFLE AND GRAVLAX EGGS BENEDICT</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Our take on traditional eggs benedict served on English muffins</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+							</div>
+							<!-- END OF THE GORMET LOVERS  -->
+							<div class="starters">
+								<h2>ON THE GO SANDWICHES</h2>
+								<div class="menu-container">
+									<!-- ON THE GO SANDWICHES -->
+									<div class="menu-item-container">
+										<h3>Crêpe with eggs</h3>
+										<div class="menu-description-area">
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>Applewood bacon, smoked gouda, and eggs</h3>
+										<div class="menu-description-area">
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>Sausage and egg on an English muffin</h3>
+										<div class="menu-description-area">
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>Roasted vegetable and goat cheese wrap</h3>
+										<div class="menu-description-area">
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>Crêpe with smoked salmon and dill cream</h3>
+										<div class="menu-description-area">
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>Bagels- smoke salmon, dill cream cheese, egg and bacon, plain cream cheese, double</h3>
+										<div class="menu-description-area">
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>smoke bacon in a bun shape</h3>
+										<div class="menu-description-area">
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+								</div>
+							</div>
+							<!-- END OF ON THE GO SANDWICHES  -->
+							<!-- BEGINING OF INTERNATIONAL SELECTIONS HEADER -->
+							<div class="mains">
+								<h2>INTERNATIONAL SELECTIONS/ CONTINENTALS</h2>
+								<!-- END OF INTERNATIONAL SELECTIONS HEADER -->
+								<!-- MENU FOR INTERNATIONAL SELECTIONS  -->
+								<div class="menu-item-container">
+									<h3>PASTRY CART SELECTIONS</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Choose any five items from cart. Accompanied with a juice/tea/ coffee</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>AÇAI BOWL</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Try our delicious açai bowl with a berry trio frozen puree served with fresh granola, nuts, and honey</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+							</div>
+						</div>
 
-            <li class="icon"><i class="fab fa-facebook-f"></i></li>
-            <li class="icon">
-              <a href="https://www.instagram.com/arazzitt" target="_blank"
-                ><i class="fab fa-instagram"></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+						<div class="submenu" id="dinner">
+							<!-- ########## BEGINNING OF LUNCH MENU #############-->
+							<div class="menu-card-header">
+								<img class="fish" src="img/fish&steak.png" alt="Fish & Steak" />
+								<h2 class="section-title menu-title">Dinner</h2>
+								<h3 class="section-subtitle">From our hearts</h3>
+							</div>
+							<div class="starters">
+								<h2>Dinner CLASSIC</h2>
+								<h3 class="section-subtitle">Served with toast / croissant / pancakes and fresh fruit</h3>
+								<div class="menu-container">
+									<div class="menu-item-container">
+										<h3>BUTTERMILK PANCAKES</h3>
+										<div class="menu-description-area">
+											<p3 class="menu-description-text"
+												>Three large fluffy pancakes, served with two strips of
+												bacon or sausage and house-made syrup
+											</p3>
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>FRENCH TOAST</h3>
+										<div class="menu-description-area">
+											<p3 class="menu-description-text">
+												Rich and spicy sourdough French toast, served with bacon or
+												sausage and maple syrup
+											</p3
+												>
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>BELGIAN WAFFLE</h3>
+										<div class="menu-description-area">
+											<p3 class="menu-description-text"
+												>A large sweet buttery waffle served with fresh fruit, cream
+												and drizzled with syrup
+											</p3
+												>
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>JUNIOR</h3>
+										<div class="menu-description-area">
+											<p3 class="menu-description-text"
+												>Two eggs any way, two strips of bacon or sausage and home
+												fried potatoes
+											</p3
+												>
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>CLASSIC</h3>
+										<div class="menu-description-area">
+											<p3 class="menu-description-text"
+												>Three eggs any way, 4 strips of bacon or sausage and home style potatoes</p3
+												>
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+								</div>
+							</div>
+							<!-- ############ EGG DISHES ############# -->
+							<!-- EGG DISHES HEADER  -->
+							<div class="mains">
+								<h2>EGG DISHES</h2>
+								<h3 class="section-subtitle">Served with toast / croissant / pancakes and fresh fruit</h3>
+								<!--  END OF EGG DISHES HEADER -->
+								<div class="menu-item-container">
+									<h3>THE NORTHERNER</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Hash browns base topped with smoked salmon, caramelized onions, and bacon, finished off with poached eggs topped with sour cream and chives.</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>EGGS BENEDICT</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Poached eggs, hollandaise, English muffin, prosciutto, and fresh cream</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<!-- end of EGG    DISHES HEADER   -->
+							</div>
+							<!-- ############ THE GOURMET LOVERS ############# -->
+							<!-- GORMET LOVERS  HEADER  -->
+							<div class="mains">
+								<h2>THE GOURMET LOVERS</h2>
+								<h3 class="section-subtitle">Served with toast / croissant / pancakes and fresh fruit</h3>
+								<!--  END OF EGG DISHES HEADER -->
+								<div class="menu-item-container">
+									<h3>THE SOUFFLÉ</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Three-cheese soufflé with ricotta, Monterey jack and parmesan, served with house-made porcini caviar</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>MANOUCHE ZA’ATAR</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Middle eastern pancake, with fresh greens, tomato, Parma ham, goat cheese and tahini</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>SEAFOOD LOVER</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Shrimp frittata with tomatoes, chive, chilies, and oregano topped with feta cheese</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>FRITTATA DE CAVIAR</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Spicy potato and onion pancake, served with garlic and ginger sour cream accompanied with decadent salmon caviar</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>TART ARUGULA</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>An arugula salad with bacon, eggs, tomatoes, and mushrooms served with an English mustard vinaigrett</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>THE PROSCIUTTO</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>A mushroom and spinach salad topped with our signature house caramelized onion, thinly sliced prosciutto, and boiled eggs, drizzled with our house dressing</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>BERRY CUCUMBER SALAD</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>A combination of arugula, strawberries, and cucumber with an onion mint dressing, topped with grapes and toasted almonds</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>WATERMELON AND PINE NUT</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Arugula, watermelon, and pine nuts with a sweet balsamic glaze and crumbled blue cheese</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>MANOUCHE ZA’ATAR</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Middle eastern pancake, with fresh greens, tomato, Parma ham, goat cheese and tahini</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>TRUFFLE AND GRAVLAX EGGS BENEDICT</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Our take on traditional eggs benedict served on English muffins</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+							</div>
+							<!-- END OF THE GORMET LOVERS  -->
+							<div class="starters">
+								<h2>ON THE GO SANDWICHES</h2>
+								<div class="menu-container">
+									<!-- ON THE GO SANDWICHES -->
+									<div class="menu-item-container">
+										<h3>Crêpe with eggs</h3>
+										<div class="menu-description-area">
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>Applewood bacon, smoked gouda, and eggs</h3>
+										<div class="menu-description-area">
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>Sausage and egg on an English muffin</h3>
+										<div class="menu-description-area">
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>Roasted vegetable and goat cheese wrap</h3>
+										<div class="menu-description-area">
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>Crêpe with smoked salmon and dill cream</h3>
+										<div class="menu-description-area">
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>Bagels- smoke salmon, dill cream cheese, egg and bacon, plain cream cheese, double</h3>
+										<div class="menu-description-area">
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+									<div class="menu-item-container">
+										<h3>smoke bacon in a bun shape</h3>
+										<div class="menu-description-area">
+										</div>
+										<h4 class="price">$0.00</h4>
+									</div>
+								</div>
+							</div>
+							<!-- END OF ON THE GO SANDWICHES  -->
+							<!-- BEGINING OF INTERNATIONAL SELECTIONS HEADER -->
+							<div class="mains">
+								<h2>INTERNATIONAL SELECTIONS/ CONTINENTALS</h2>
+								<!-- END OF INTERNATIONAL SELECTIONS HEADER -->
+								<!-- MENU FOR INTERNATIONAL SELECTIONS  -->
+								<div class="menu-item-container">
+									<h3>PASTRY CART SELECTIONS</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Choose any five items from cart. Accompanied with a juice/tea/ coffee</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+								<div class="menu-item-container">
+									<h3>AÇAI BOWL</h3>
+									<div class="menu-description-area">
+										<p3 class="menu-description-text"
+											>Try our delicious açai bowl with a berry trio frozen puree served with fresh granola, nuts, and honey</p3
+											>
+									</div>
+									<h4 class="price">$0.00</h4>
+								</div>
+							</div>
+						</div>
+				</div>
+			</section>
+		</main>
+		<script>
+			const showMenu = (menu_name) => {
+				//hide all the menus
+				let menus = document.getElementsByClassName("submenu");
+				Array.from(menus).forEach((menu) => {
+					menu.style.display = "none";
+				});
 
-    <main>
-      <section class="menu" id="menu">
-        <div
-          class="menu-card"
-          data-aos="fade-up"
-          data-aos-offset="300"
-          data-aos-duration="1000"
-        >
-          <div class="menu-card-header">
-            <img class="fish" src="img/fish&steak.png" alt="Fish & Steak" />
-            <h2 class="section-title menu-title">Breakfast</h2>
-            <h3 class="section-subtitle">From our hearts</h3>
-          </div>
-
-          <div class="starters">
-            <h2>Starters</h2>
-            <div class="starter">
-              <div class="starter-header">
-                <h3>BUTTERMILK PANCAKES</h3>
-                <div class="menu-description-area">
-                  <p3 class="menu-description-text"
-                    >Three large fluffy pancakes, served with two strips of
-                    bacon or sausage and house-made syrup
-                  </p3>
-                </div>
-
-                <h4 class="price">$0.00</h4>
-              </div>
-              <div class="starter-header">
-                <h3>FRENCH TOAST</h3>
-                <div class="menu-description-area">
-                  <p3 class="menu-description-text">
-                    Rich and spicy sourdough French toast, served with bacon or
-                    sausage and maple syrup</p3
-                  >
-                </div>
-
-                <h4 class="price">$0.00</h4>
-              </div>
-
-              <div class="starter-header">
-                <h3>BELGIAN WAFFLE</h3>
-                <div class="menu-description-area">
-                  <p3 class="menu-description-text"
-                    >A large sweet buttery waffle served with fresh fruit, cream
-                    and drizzled with syrup</p3
-                  >
-                </div>
-
-                <h4 class="price">$0.00</h4>
-              </div>
-              <div class="starter-header">
-                <h3>JUNIOR</h3>
-                <div class="menu-description-area">
-                  <p3 class="menu-description-text"
-                    >Two eggs any way, two strips of bacon or sausage and home
-                    fried potatoes</p3
-                  >
-                </div>
-
-                <h4 class="price">$0.00</h4>
-              </div>
-              <p class="menu-paragraph">
-                Lorem ipsum dolor sit amet purus vitae libero lacinia accumsan
-                vitae, dapibus et.
-              </p>
-            </div>
-
-            <div class="starter">
-              <div class="starter-header">
-                <h3>Proin gravida gravida</h3>
-                <h4 class="price">$10.50</h4>
-              </div>
-              <p class="menu-paragraph">
-                Lorem ipsum dolor sit amet purus vitae libero lacinia accumsan
-                vitae, dapibus et.
-              </p>
-            </div>
-
-            <div class="starter">
-              <div class="starter-header">
-                <h3>Proin gravida gravida</h3>
-                <h4 class="price">$10.50</h4>
-              </div>
-              <p class="menu-paragraph">
-                Lorem ipsum dolor sit amet purus vitae libero lacinia accumsan
-                vitae, dapibus et.
-              </p>
-            </div>
-          </div>
-          <div class="mains">
-            <h2>Mains</h2>
-            <div class="starter">
-              <div class="starter-header">
-                <h3>Proin gravida gravida</h3>
-                <h4 class="price">$10.50</h4>
-              </div>
-              <p class="menu-paragraph">
-                Lorem ipsum dolor sit amet purus vitae libero lacinia accumsan
-                vitae, dapibus et.
-              </p>
-            </div>
-
-            <div class="starter">
-              <div class="starter-header">
-                <h3>Proin gravida gravida</h3>
-                <h4 class="price">$10.50</h4>
-              </div>
-              <p class="menu-paragraph">
-                Lorem ipsum dolor sit amet purus vitae libero lacinia accumsan
-                vitae, dapibus et.
-              </p>
-            </div>
-
-            <div class="starter">
-              <div class="starter-header">
-                <h3>Proin gravida gravida</h3>
-                <h4 class="price">$10.50</h4>
-              </div>
-              <p class="menu-paragraph">
-                Lorem ipsum dolor sit amet purus vitae libero lacinia accumsan
-                vitae, dapibus et.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-      integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="app.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+				//show the desired menu
+				let target_menu = document.getElementById(menu_name);
+				target_menu.style.display = "block";
+			}
+		</script>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+			></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+			integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0="
+			crossorigin="anonymous"
+			></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="app.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
 </html>
