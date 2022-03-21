@@ -55,6 +55,7 @@ a {
 .logo {
   cursor: pointer;
   z-index: 50;
+  margin-top: -5px;
 }
 
 .nav {
@@ -88,7 +89,7 @@ a {
   width: 5rem;
   border-radius: 50%;
   position: fixed;
-  top: 2rem;
+  top: 1.5rem;
   right: 2rem;
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
@@ -240,6 +241,11 @@ a {
   z-index: 1000;
 }
 
+.go-top:hover {
+  text-decoration: none;
+  color: #333;
+}
+
 /* Offers */
 .offers {
   width: 100%;
@@ -349,7 +355,7 @@ a {
   font-weight: bold;
   font-size: 1.2rem;
   color: #333;
-  z-index: 1;
+  z-index: 5;
   min-width: 130px;
   margin-bottom: 4rem;
 }
@@ -412,6 +418,9 @@ a {
   color: white;
 }
 
+.fa-facebook-f {
+  color: white;
+}
 .description-paragraph {
   margin-top: 1.5rem;
   font-size: 1.6rem;
