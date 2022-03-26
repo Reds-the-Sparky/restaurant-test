@@ -67,6 +67,9 @@ a {
   margin-top: -5px;
 }
 
+.carousel-control-next {
+  z-index: 0;
+}
 .nav {
   display: flex;
   align-items: center;
@@ -467,9 +470,6 @@ a {
   font-style: italic;
 }
 
-.price {
-}
-
 @media only screen and (max-width: 600px) {
   .price {
     margin-bottom: 1em;
@@ -805,6 +805,13 @@ select:focus {
   max-width: 500px;
 }
 
+.carousel-indicators {
+  z-index: 0;
+}
+
+.carousel-control-prev {
+  z-index: 0;
+}
 .carousel-inner {
   width: 800px;
 }
