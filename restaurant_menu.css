@@ -567,7 +567,6 @@ a {
 
 .carousel div {
   margin: 0 auto;
-  width: 100vw;
 }
 
 .carousel img {
@@ -755,10 +754,11 @@ select:focus {
  ; 
 } */
 
-.resturant-carousel-section {
+.restaurant-carousel-section {
   display: flex;
 }
-.resturant-carousel-section > img {
+.restaurant-carousel-section > img {
+  max-height: 90vh;
   max-width: 100%;
   width: auto 9;
   height: auto;
@@ -784,7 +784,7 @@ select:focus {
     max-height: 230px;
   }
 
-  .resturant-carousel-section > img {
+  .restaurant-carousel-section > img {
     max-height: 230px;
   }
 }
