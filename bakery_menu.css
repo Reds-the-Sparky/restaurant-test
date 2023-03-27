@@ -188,8 +188,20 @@ a {
   color: #fff;
   display: flex;
   margin-right: 8rem;
+  margin-top: 7px;
   z-index: 50;
   width: 21px;
+}
+
+.arazzi-logo {
+  height: 5rem;
+  margin-top: -10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .arazzi-logo {
+    height: 3rem;
+  }
 }
 
 .icon {
